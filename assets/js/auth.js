@@ -43,7 +43,7 @@
       loginButton.addEventListener('click', function() {
 
         var client_id = 'e5e2cfc631ff4d00bb31f9cd5da6befe'; 
-        var redirect_uri = 'http://localhost:5500/';
+        var redirect_uri = 'https://alanosms.github.io/spotify-analysis/';
 
         var state = generateRandomString(16);
 
