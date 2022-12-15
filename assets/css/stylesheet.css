@@ -10,6 +10,7 @@
     display: flex;
     width: 100vw;
     height: 100vh;
+    overflow: auto;
 }
 .leftPart{
     width: 30vw;
@@ -76,7 +77,10 @@
         }
         #logo{  
             margin-top: 150px;
-            height: 220px;
+            height: 150px;
+        }
+        .rightPart{
+            justify-content: space-between;
         }
         .containerMain{
             margin-bottom: 500px;
