@@ -42,8 +42,8 @@
 
       loginButton.addEventListener('click', function() {
 
-        var client_id = 'e5e2cfc631ff4d00bb31f9cd5da6befe'; 
-        var redirect_uri = 'https://alanosms.github.io/spotify-analysis/';
+        var client_id = 'c4b2d1c733934d85a320dbe4897b1640'; 
+        var redirect_uri = 'http://localhost:5500/';
 
         var state = generateRandomString(16);
 
@@ -87,11 +87,11 @@
                             let tableRow = document.createElement("tr");
 
                                 tableRow.innerHTML = `                        
-                                <td>${data.items.indexOf(item) + 1}</td>
-                                <td>${trackName}</td>
-                                <td>${nameAlbum}</td>
-                                <td>${artist}</td>
-                                <td>${duration}</td>`;
+                                <td data-label="Ranking">${data.items.indexOf(item) + 1}</td>
+                                <td data-label="Nome">${trackName}</td>
+                                <td data-label="Albúm">${nameAlbum}</td>
+                                <td data-label="Cantor">${artist}</td>
+                                <td data-label="Duração">${duration}</td>`;
 
                             console.log(trackName, nameAlbum, artist, duration);
                                 table.appendChild(tableRow);
