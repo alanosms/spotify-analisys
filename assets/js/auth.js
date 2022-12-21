@@ -66,9 +66,9 @@
         handleDataTable();
       }
 
-    function handleDataTable(){
+    async function handleDataTable(){
         if(access_token){
-            fetch('https://api.spotify.com/v1/me/top/tracks?time_range=medium_term&limit=5&offset=1', {
+           await fetch('https://api.spotify.com/v1/me/top/tracks?time_range=medium_term&limit=5&offset=1', {
                 method: 'GET', headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json',
